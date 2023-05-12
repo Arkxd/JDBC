@@ -19,10 +19,10 @@ public class controller_Servlet extends HttpServlet {
         String result = modelBean.getResult();
 
         response.setContentType("text/html; charset=utf-8");
-        request.setAttribute("result", request);
+        request.setAttribute("result", result);
         request.setAttribute("BMI", BMI);
 
-        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view_Result.jsp");
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("体重测算/view_Result.jsp");
         requestDispatcher.forward(request, response);
     }
 

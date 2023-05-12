@@ -11,6 +11,12 @@
     <title>Title</title>
 </head>
 <body>
+<%
+    String BMI = (String) request.getAttribute("BMI");
+    String result = (String) request.getAttribute("result");
 
+    out.println("<html>");
+    out.println("<body>");
+%>
 </body>
 </html>
