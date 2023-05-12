@@ -11,6 +11,6 @@
     <title>$Title$</title>
 </head>
 <body>
-<jsp:forward page="login/view.jsp"/>
+<jsp:forward page="体重测算/体重测算.jsp"/>
 </body>
 </html>
