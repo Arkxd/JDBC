@@ -11,7 +11,7 @@
     <title>Title</title>
 </head>
 <body>
-<form action="controller_Servlet" method="post">
+<form action="controller_Servlet" method="get">
   <table align="center" width="300" border="1" height="150">
     <tr>
       <td colspan="2" align="center"><b>登录页面</b></td>

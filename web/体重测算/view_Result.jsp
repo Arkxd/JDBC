@@ -17,6 +17,10 @@
 
     out.println("<html>");
     out.println("<body>");
+    out.println("<center>");
+    out.println("您的的BMI指数为：" + "<font color=red>" + BMI + "</font><br>");
+    out.println(result);
+    out.println("</center>");
 %>
 </body>
 </html>
