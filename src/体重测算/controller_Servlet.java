@@ -12,7 +12,18 @@ public class controller_Servlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String weight = request.getParameter("weight");
         String height = request.getParameter("height");
+        model_Bean modelBean = new model_Bean();
+        modelBean.setBmi(weight, height);
+        String BMI = modelBean.getBmi();
+        modelBean.setResult(BMI);
+        String result = modelBean.getResult();
 
+        response.setContentType("text/html; charset=utf-8");
+        request.setAttribute("result", request);
+        request.setAttribute("BMI", BMI);
+
+        RequestDispatcher requestDispatcher = request.getRequestDispatcher("view_Result.jsp");
+        requestDispatcher.forward(request, response);
     }
 
     @Override
